@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHIMAWAKIHIKARU — Portfolio</title>
+  <link rel="icon" href="assets/images/icon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="top">
+
+  <!-- ============================================================
+       HEADER (transparent → white on scroll)
+       ============================================================ -->
+  <header class="site-header site-header--top" id="siteHeader">
+    <div class="container">
+      <a href="index.html" class="site-logo">SHIMAWAKIHIKARU</a>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html">Top</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       FIRST VIEW — Full-screen video (100vh)
+       ============================================================ -->
+  <div class="top-first-view">
+
+    <!-- YouTube video background -->
+    <div class="top-video-bg">
+      <div id="ytPlayer"></div>
+      <div class="top-video-overlay"></div>
+    </div>
+
+    <!-- Cursor trail canvas -->
+    <canvas id="heroTrail"></canvas>
+
+    <!-- Hero text -->
+    <div class="top-hero-content">
+      <div class="parallax-layer" data-depth="0.6">
+        <div class="top-hero-name hero-anim" style="--anim-delay:0.1s">SHIMAWAKI</div>
+      </div>
+      <div class="parallax-layer" data-depth="0.5">
+        <div class="top-hero-name hero-anim" style="--anim-delay:0.18s">HIKARU</div>
+      </div>
+      <div class="top-hero-role-row">
+        <div class="parallax-layer" data-depth="0.25">
+          <span class="top-hero-role hero-anim" style="--anim-delay:0.35s">3DCG DESIGN</span>
+        </div>
+        <div class="parallax-layer" data-depth="0.27">
+          <span class="top-hero-role-sep hero-anim" style="--anim-delay:0.40s">/</span>
+        </div>
+        <div class="parallax-layer" data-depth="0.30">
+          <span class="top-hero-role hero-anim" style="--anim-delay:0.45s">GAME</span>
+        </div>
+        <div class="parallax-layer" data-depth="0.32">
+          <span class="top-hero-role-sep hero-anim" style="--anim-delay:0.50s">/</span>
+        </div>
+        <div class="parallax-layer" data-depth="0.35">
+          <span class="top-hero-role hero-anim" style="--anim-delay:0.55s">ANIMATION</span>
+        </div>
+      </div>
+      <div class="top-hero-nav hero-anim" style="--anim-delay:0.7s">
+        <div class="parallax-layer" data-depth="0.2">
+          <a href="works.html" class="top-hero-btn">WORKS →</a>
+        </div>
+        <div class="parallax-layer" data-depth="0.18">
+          <a href="about.html" class="top-hero-btn top-hero-btn--ghost">ABOUT</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /.top-first-view -->
+
+  <!-- ============================================================
+       WORKS SECTION — Top 6 works
+       ============================================================ -->
+  <section class="top-works-section">
+    <div class="container">
+      <p class="top-section-label">Works</p>
+      <div class="works-grid" id="topWorksGrid">
+        <!-- Injected by main.js (top 6 works) -->
+      </div>
+      <div class="top-works-more">
+        <a href="works.html" class="top-works-link">ALL WORKS →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION — Profile & Skills
+       ============================================================ -->
+  <section class="about-section">
+    <div class="container">
+
+      <!-- Photo placeholder -->
+      <div>
+        <div class="about-photo">
+          <img src="assets/images/Portfolio.jpg" alt="Shimawaki Hikaru" class="about-photo__img">
+        </div>
+      </div>
+
+      <!-- Profile text -->
+      <div class="about-body">
+        <p class="about-heading">About</p>
+        <h2 class="about-name">嶋脇瑛 / SHIMAWAKI HIKARU</h2>
+        <p class="about-tagline">東北芸術工科大学 デザイン工学部 映像学科 2025年度卒業<br>FLAT STUDIO｜3DCG・撮影・背景美術</p>
+
+        <p>
+          大学では専門的に3DCGを学び、卒業制作ではデザイン面とプログラミング面の両方を
+          一人で制作しました。現在はアニメーション制作会社FLAT STUDIOにて3DCG・撮影・
+          背景美術を学んでいます。ゲームとアニメーションの両方の視点を培ってきました。
+        </p>
+        <p>
+          色々な方面がこなせる性質・能力が強みです。ゲーム制作・3DCG背景・2Dアニメーション・
+          実写映像・イラスト・小説・研究など幅広い分野に取り組み、それぞれのスキルを
+          デザインの仕事に応用できることを目指しています。
+        </p>
+
+        <!-- Skills -->
+        <div class="skills-grid">
+          <div>
+            <p class="skill-group-label">3DCG / Game</p>
+            <div class="skill-items">
+              <span class="skill-tag">Unreal Engine 5</span>
+              <span class="skill-tag">Blender</span>
+              <span class="skill-tag">Substance Painter</span>
+            </div>
+          </div>
+          <div>
+            <p class="skill-group-label">Animation / Video</p>
+            <div class="skill-items">
+              <span class="skill-tag">After Effects</span>
+              <span class="skill-tag">Clip Studio</span>
+              <span class="skill-tag">Illustrator</span>
+            </div>
+          </div>
+          <div>
+            <p class="skill-group-label">Illustration</p>
+            <div class="skill-items">
+              <span class="skill-tag">Photoshop</span>
+              <span class="skill-tag">Desital Illustration</span>
+              <span class="skill-tag">Design</span>
+            </div>
+          </div>
+          <div>
+            <p class="skill-group-label">Traditional / Other</p>
+            <div class="skill-items">
+              <span class="skill-tag">Music</span>
+              <span class="skill-tag">Novel</span>
+              <span class="skill-tag">Dessin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-name">SHIMAWAKIHIKARU</span>
+      <span class="footer-copy">© 2027 SHIMAWAKIHIKARU. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <script src="js/works-data.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- YouTube IFrame Player API -->
+  <script>
+    var ytPlayer;
+
+    function onYouTubeIframeAPIReady() {
+      var startSec = Math.floor(Math.random() * 61);
+      ytPlayer = new YT.Player('ytPlayer', {
+        width: '1920',
+        height: '1080',
+        videoId: '3IW7t_xJsLI',
+        playerVars: {
+          autoplay: 1,
+          mute: 1,
+          controls: 0,
+          rel: 0,
+          modestbranding: 1,
+          playsinline: 1,
+          loop: 1,
+          playlist: '3IW7t_xJsLI',
+          start: startSec
+        },
+        events: {
+          onReady: function(e) {
+            e.target.seekTo(startSec);
+            e.target.playVideo();
+          }
+        }
+      });
+    }
+  </script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+</body>
+</html>

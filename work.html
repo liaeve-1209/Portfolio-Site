@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work — SHIMAWAKIHIKARU</title>
+  <link rel="icon" href="assets/images/icon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="detail">
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">SHIMAWAKIHIKARU</a>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html">Top</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       BACK LINK
+       ============================================================ -->
+  <div class="detail-nav">
+    <div class="container">
+      <a href="works.html" class="back-link">← Back to Works</a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       1. HERO IMAGE (サムネイル)
+       ============================================================ -->
+  <div class="detail-hero" id="detailHero">
+    <span class="detail-hero-label">[ Main Visual ]</span>
+  </div>
+
+  <!-- ============================================================
+       2. WORK INFO — 作品名 + タグライン + 概要 + メタ
+       ============================================================ -->
+  <section class="detail-info">
+    <div class="container">
+
+      <!-- Left: Title + Tagline + Description -->
+      <div class="detail-main">
+        <h1 class="detail-title" id="detailTitle">Title</h1>
+        <div class="detail-eyebrow">
+          <span class="detail-category" id="detailCategory">Category</span>
+          <span class="detail-number" id="detailNumber"></span>
+        </div>
+        <!-- タグライン（サブタイトル） -->
+        <p class="detail-tagline" id="detailTagline"></p>
+        <div class="detail-description" id="detailDescription">
+          <!-- Injected by main.js -->
+        </div>
+        <!-- 動画（作品によって表示） -->
+        <div class="detail-video__wrap" id="detailVideoSection" style="display:none">
+          <div id="detailVideoPlayer"></div>
+        </div>
+      </div>
+
+      <!-- Right: Meta sidebar -->
+      <div class="detail-meta">
+        <div class="meta-group">
+          <p class="meta-label">Year</p>
+          <p class="meta-value" id="detailYear">—</p>
+        </div>
+        <div class="meta-group">
+          <p class="meta-label">Duration</p>
+          <p class="meta-value" id="detailDuration">—</p>
+        </div>
+        <div class="meta-group">
+          <p class="meta-label">Type</p>
+          <p class="meta-value" id="detailType">—</p>
+        </div>
+        <div class="meta-group">
+          <p class="meta-label">Category</p>
+          <p class="meta-value" id="detailCategoryMeta">—</p>
+        </div>
+        <div class="meta-group">
+          <p class="meta-label">Tools Used</p>
+          <div id="detailTools">
+            <!-- Injected by main.js -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3. GALLERY — 作品に関する画像（大きめ表示）
+       ============================================================ -->
+  <section class="detail-gallery-section" id="detailGallerySection">
+    <div class="container">
+      <div class="gallery-grid--large" id="detailGallery">
+        <!-- Injected by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. 制作概要 — 画像と交互レイアウト
+       ============================================================ -->
+  <section class="detail-process" id="detailProcess">
+    <!-- Injected by main.js if work.process exists -->
+  </section>
+
+  <!-- ============================================================
+       PREV / NEXT NAVIGATION
+       ============================================================ -->
+  <div class="container">
+    <div class="work-pagination">
+      <div class="pagination-btn prev" id="prevWork">
+        <!-- Injected by main.js -->
+      </div>
+      <div class="pagination-btn next" id="nextWork">
+        <!-- Injected by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-name">SHIMAWAKIHIKARU</span>
+      <span class="footer-copy">© 2027 SHIMAWAKIHIKARU. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- Cursor trail canvas -->
+  <canvas id="detailTrail"></canvas>
+
+  <!-- Scripts -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/works-data.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

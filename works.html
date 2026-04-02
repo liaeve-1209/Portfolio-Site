@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Works — SHIMAWAKIHIKARU</title>
+  <link rel="icon" href="assets/images/icon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">SHIMAWAKIHIKARU</a>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="index.html">Top</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       FILTER BAR
+       ============================================================ -->
+  <div class="filter-bar">
+    <div class="container">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="game">Game</button>
+      <button class="filter-btn" data-category="3dcg">3DCG</button>
+      <button class="filter-btn" data-category="animation">Animation</button>
+      <button class="filter-btn" data-category="film">Film</button>
+      <button class="filter-btn" data-category="art">Art</button>
+      <button class="filter-btn" data-category="other">Other</button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       WORKS GRID
+       ============================================================ -->
+  <section class="works-section">
+    <div class="container">
+      <div class="works-grid" id="worksGrid">
+        <!-- Cards injected by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-name">SHIMAWAKIHIKARU</span>
+      <span class="footer-copy">© 2027 SHIMAWAKIHIKARU. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/works-data.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
