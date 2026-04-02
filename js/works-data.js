@@ -474,19 +474,19 @@ const WORKS = [
       "短時間で質感のインプットを増やすために制作したデッサンシリーズ。",
       "様々な素材・物体の質感を観察し、短時間でスケッチとして記録することを繰り返した練習作品群。"
     ],
-    thumbnail: "assets/works/質感デッサン/08.jpg",
+    thumbnail: "./assets/works/質感デッサン/08.jpg",
     images: [
-      "assets/works/質感デッサン/08.jpg",
-      "assets/works/質感デッサン/02.jpg",
-      "assets/works/質感デッサン/03.jpg",
-      "assets/works/質感デッサン/04.jpg",
-      "assets/works/質感デッサン/05.jpg",
-      "assets/works/質感デッサン/06.jpg",
-      "assets/works/質感デッサン/07.jpg",
-      "assets/works/質感デッサン/01.jpg",
-      "assets/works/質感デッサン/09.jpg",
-      "assets/works/質感デッサン/10.jpg",
-      "assets/works/質感デッサン/11.jpg"
+      "./assets/works/質感デッサン/08.jpg",
+      "./assets/works/質感デッサン/02.jpg",
+      "./assets/works/質感デッサン/03.jpg",
+      "./assets/works/質感デッサン/04.jpg",
+      "./assets/works/質感デッサン/05.jpg",
+      "./assets/works/質感デッサン/06.jpg",
+      "./assets/works/質感デッサン/07.jpg",
+      "./assets/works/質感デッサン/01.jpg",
+      "./assets/works/質感デッサン/09.jpg",
+      "./assets/works/質感デッサン/10.jpg",
+      "./assets/works/質感デッサン/11.jpg"
     ],
     colors: {
       '--color-bg': '#f8f8f4',
